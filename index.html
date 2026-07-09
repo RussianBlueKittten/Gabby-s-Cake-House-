@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabby's Bakehouse — Handmade Cakes, Made to Order</title>
+<meta name="description" content="Custom cakes, birthday bakes and celebration treats handmade by Gabby. Browse the menu, build your order, and get in touch.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============================================================
+     HEADER / NAV
+     ============================================================ -->
+<header class="site-header" id="site-header">
+  <div class="container nav">
+    <a href="#top" class="nav-logo">
+      <span class="nav-logo-mark" aria-hidden="true">✿</span>
+      Gabby's <em>Bakehouse</em>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#about">About Gabby</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#order">Custom Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-toggle" id="cart-toggle" aria-haspopup="dialog" aria-controls="cart-drawer" aria-label="Open cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 8h12l-1.2 10.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+      </button>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Handmade in small batches</p>
+        <h1>Cakes worth <span class="script">celebrating</span> for</h1>
+        <p class="hero-lede">
+          Gabby bakes and hand-decorates custom cakes for birthdays, weddings and
+          everyday cravings — trained through college, made with way too much care.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Browse the menu</a>
+          <a href="#order" class="btn btn-secondary">Request a custom cake</a>
+        </div>
+        <ul class="hero-trust">
+          <li>Made to order</li>
+          <li>Local collection &amp; delivery</li>
+          <li>Custom flavours welcome</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-image-frame">
+          <img src="images/hero-featured.jpg" alt="Hand-decorated Christmas tree cake, one of Gabby's signature designs" id="hero-image">
+          <span class="hero-badge">
+            <span class="hero-badge-text">Baker's<br>pick</span>
+          </span>
+        </div>
+        <svg class="hero-swoop" viewBox="0 0 200 60" width="180" aria-hidden="true">
+          <path d="M4 40 Q 50 4, 100 34 T 196 22" stroke="var(--color-accent)" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENU / SHOP
+       ============================================================ -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">The menu</p>
+        <h2>Pick your cake<svg class="underline-swoosh" viewBox="0 0 220 16" aria-hidden="true"><path d="M2 11 Q 55 1, 110 9 T 218 6" stroke="var(--color-accent)" stroke-width="4" fill="none" stroke-linecap="round"/></svg></h2>
+        <p>Every cake is baked fresh to order. Prices shown are a starting guide — final quotes depend on size and design.</p>
+      </div>
+
+      <div class="menu-filters" id="menu-filters" role="tablist" aria-label="Filter cakes by category">
+        <!-- populated by JS from CATEGORIES -->
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- populated by JS from CAKES -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT GABBY
+       ============================================================ -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <img src="images/pink-macarons-wide.jpg" alt="Gabby hand-piping macarons in the college training kitchen" id="about-image">
+        <svg class="about-scribble" viewBox="0 0 120 120" aria-hidden="true">
+          <circle cx="60" cy="60" r="52" stroke="var(--color-gold)" stroke-width="2.5" fill="none" stroke-dasharray="6 8"/>
+        </svg>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About Gabby</p>
+        <h2>From college kitchens to<br>your celebration table</h2>
+        <p>
+          Gabby trained her craft through hands-on baking classes at college, where a class
+          project turned into a genuine obsession with sugar work, laminated layers and getting
+          buttercream perfectly smooth. Every cake on this site started as coursework and grew
+          into something she's proud to put her name on.
+        </p>
+        <p>
+          She bakes everything herself, in small batches, so every order gets proper attention —
+          no two cakes come out quite the same.
+        </p>
+        <ul class="about-stats">
+          <li><strong>College-trained</strong><span>Professional baking &amp; patisserie coursework</span></li>
+          <li><strong>Made to order</strong><span>Nothing sits pre-made in a fridge</span></li>
+          <li><strong>Custom-friendly</strong><span>Flavours, sizes and designs tailored to you</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY
+       ============================================================ -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Recent bakes</p>
+        <h2>A little taste of the portfolio<svg class="underline-swoosh" viewBox="0 0 220 16" aria-hidden="true"><path d="M2 11 Q 55 1, 110 9 T 218 6" stroke="var(--color-accent)" stroke-width="4" fill="none" stroke-linecap="round"/></svg></h2>
+        <p>A rolling look at what's come out of the kitchen lately.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- populated by JS from GALLERY -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CUSTOM ORDER / ENQUIRY
+       ============================================================ -->
+  <section id="order" class="order-section">
+    <div class="container order-grid">
+      <div class="order-copy">
+        <p class="eyebrow">Something bespoke?</p>
+        <h2>Request a custom cake</h2>
+        <p>
+          Got an occasion in mind — a wedding, a first birthday, an anniversary?
+          Tell Gabby what you're picturing and she'll come back to you with a quote
+          and some ideas.
+        </p>
+        <ul class="order-steps">
+          <li><span class="order-step-num">1</span> Send over your date, size and vibe</li>
+          <li><span class="order-step-num">2</span> Gabby replies with a quote &amp; sketch ideas</li>
+          <li><span class="order-step-num">3</span> Confirm, pay a deposit, and it's booked</li>
+        </ul>
+        <p class="order-note">Payments aren't set up on the site just yet — Gabby will follow up directly to sort deposits and final payment.</p>
+      </div>
+
+      <form class="order-form" id="order-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="of-name">Your name</label>
+            <input type="text" id="of-name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="of-email">Email</label>
+            <input type="email" id="of-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="of-occasion">Occasion</label>
+            <select id="of-occasion" name="occasion" required>
+              <option value="" disabled selected>Choose one</option>
+              <option>Birthday</option>
+              <option>Wedding</option>
+              <option>Anniversary</option>
+              <option>Baby shower</option>
+              <option>Just because</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="of-date">Date needed</label>
+            <input type="date" id="of-date" name="date" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="of-details">Tell Gabby what you're picturing</label>
+          <textarea id="of-details" name="details" rows="4" placeholder="Servings, flavours, colours, any theme or inspiration..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send request</button>
+        <p class="form-status" id="order-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT / FOOTER LEAD-IN
+       ============================================================ -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-inner">
+      <p class="eyebrow">Say hello</p>
+      <h2>Questions before you order?</h2>
+      <p>Drop a message and Gabby will get back to you as soon as she's out of the kitchen.</p>
+      <div class="contact-details">
+        <a href="mailto:hello@gabbysbakehouse.example">hello@gabbysbakehouse.example</a>
+        <span aria-hidden="true">·</span>
+        <span>Local collection &amp; delivery</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<div class="cart-backdrop" id="cart-backdrop"></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Your cart" aria-hidden="true">
+  <div class="cart-drawer-header">
+    <h2>Your order</h2>
+    <button class="cart-close" id="cart-close" aria-label="Close cart">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cart-items">
+    <!-- populated by JS -->
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Estimated total</span>
+      <strong id="cart-total">£0.00</strong>
+    </div>
+    <p class="cart-note">Prices are estimates — Gabby will confirm final pricing based on your exact design.</p>
+    <button class="btn btn-primary btn-block" id="cart-checkout">Continue to checkout</button>
+    <p class="checkout-placeholder-note" id="checkout-note" hidden>
+      Checkout &amp; payment aren't switched on yet — this is a placeholder for now.
+      In the meantime your list has been noted; head to <a href="#order">Custom Order</a> to send it to Gabby directly.
+    </p>
+  </div>
+</aside>
+
+<!-- ============================================================
+     QUICK VIEW MODAL
+     ============================================================ -->
+<div class="modal-backdrop" id="modal-backdrop"></div>
+<div class="quick-view" id="quick-view" role="dialog" aria-modal="true" aria-labelledby="qv-title" aria-hidden="true">
+  <button class="modal-close" id="qv-close" aria-label="Close">&times;</button>
+  <div class="qv-image">
+    <img src="" alt="" id="qv-img">
+  </div>
+  <div class="qv-body">
+    <p class="eyebrow" id="qv-category"></p>
+    <h3 id="qv-title"></h3>
+    <p id="qv-desc"></p>
+    <div class="qv-price" id="qv-price"></div>
+
+    <div class="qv-qty">
+      <label for="qv-qty-input">Quantity</label>
+      <div class="qty-stepper">
+        <button type="button" id="qv-qty-minus" aria-label="Decrease quantity">&minus;</button>
+        <input type="number" id="qv-qty-input" value="1" min="1" max="20">
+        <button type="button" id="qv-qty-plus" aria-label="Increase quantity">+</button>
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-block" id="qv-add">Add to order</button>
+  </div>
+</div>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-mark" aria-hidden="true">✿</span>
+      <span>Gabby's Bakehouse</span>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#order">Custom Order</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Gabby's Bakehouse. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
