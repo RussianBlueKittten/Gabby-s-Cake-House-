@@ -112,19 +112,19 @@
     /* ---------------- MACARONS ---------------- */
     {
       id: 'pink-macarons',
-      name: 'Classic Pink Macarons (Box of 6)',
+      name: 'Strawberries & Cream Macarons (Box of 6)',
       category: 'macarons',
       price: 12.00,
-      desc: 'Delicate almond macaron shells in soft pink, hand-piped and filled with a smooth buttercream. Made fresh in small batches.',
+      desc: 'Delicate almond macaron shells in soft pink, hand-piped and filled with a strawberry and white chocolate ganache. Made fresh in small batches.',
       img: 'images/pink-macarons-wide.jpg',
       tag: 'Bestseller',
     },
     {
       id: 'chocolate-macarons',
-      name: 'Salted Caramel Macarons (Box of 6)',
+      name: 'Espresso Macarons (Box of 6)',
       category: 'macarons',
       price: 13.00,
-      desc: 'Rich chocolate macaron shells sandwiched with a silky salted caramel filling. A firm favourite for chocolate lovers.',
+      desc: 'Rich chocolate macaron shells filled with a coffee-flavoured buttercream. A firm favourite for coffee lovers.',
       img: 'images/chocolate-macarons.jpg',
       tag: null,
     },
@@ -145,7 +145,7 @@
       category: 'cheesecakes',
       price: 26.00,
       desc: 'A light, minty no-bake cheesecake topped with mint Aero bubbles and chocolate malt balls. Cool, fresh and finished to look as good as it tastes.',
-      img: 'images/mint-aero-cheesecake.jpg',
+      img: 'images/lime-cheesecake-cups.jpg',
       tag: null,
     },
     {
@@ -153,8 +153,8 @@
       name: 'Lime Cheesecake Cups (Box of 6)',
       category: 'cheesecakes',
       price: 18.00,
-      desc: 'Individual lime cheesecake cups topped with fresh zest and white chocolate shards. Bright, zesty and perfectly portioned for sharing.',
-      img: 'images/lime-cheesecake-cups.jpg',
+      desc: 'Individual lime cheesecake cups topped with fresh zest and crushed meringue. Bright, zesty and perfectly portioned for sharing.',
+      img: 'images/mint-aero-cheesecake.jpg',
       tag: null,
     },
   ];
