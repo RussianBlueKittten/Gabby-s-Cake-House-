@@ -87,7 +87,7 @@
       category: 'cupcakes',
       price: 24.00,
       desc: 'Vanilla and chocolate cupcakes finished with swirled buttercream, edible flowers and custom "Baby Shower" toppers. Easily adapted for any theme or colour palette.',
-      img: 'images/baby-shower-cupcakes.jpg',
+      img: 'images/salted-caramel-choc-cupcakes.jpg',
       tag: 'Customisable',
     },
     {
@@ -96,7 +96,7 @@
       category: 'cupcakes',
       price: 21.00,
       desc: 'Rich chocolate cupcakes filled with salted caramel, finished with a swirl of salted caramel buttercream. A firm favourite for anyone with a sweet tooth.',
-      img: 'images/salted-caramel-choc-cupcakes.jpg',
+      img: 'images/baby-shower-cupcakes.jpg',
       tag: 'Bestseller',
     },
     {
